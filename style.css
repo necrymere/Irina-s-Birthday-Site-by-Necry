@@ -1,0 +1,344 @@
+/* 1.Main backround and centering*/
+:root{
+    --bg-color:#121214;            
+    --card-bg: #1a1a1e;
+    --border-colour: #4a3b32;
+    --badge-bg: #4a1c24;
+    --text-gold: #c9b097;
+    --text-light: #e0d8d0;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Reenie+Beanie&display=swap');
+body{
+    background: radial-gradient(circle at center,#1b0f2e 0%, #0a0a0c 100%);
+    color: #f3e8ca;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+/* 3.Card container*/
+.quiz-card{
+    background: rgba(22, 12,36,0.85);
+    border: 1px solid rgba(250, 225, 156, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6)
+                0 0 20px rgba(157, 78, 221,0.25)
+}
+/*Header text*/
+.big question{
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #fae19c;
+    text-shadow: 0 0 15px rgba(250, 225, 156, 0.3);
+    letter-spacing: 1px;
+}
+/*Button layout*/
+.Buttons{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.btn{
+    flex: 1;
+    padding: 14px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.btn:active{
+    transform: scale(0.95);
+}
+.yes-btn{
+    background: linear-gradient(135deg, #9d4edd 0%, #7b2cbf 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(157, 78, 221,0.4);
+}
+.no-btn{
+    background-color: #24242e;
+    color: #f3e8ca;
+    border: 1px solid rgba(250, 225, 156, 0.2);
+}
+
+.turned-yes{
+    background: linear-gradient(135deg, #9d4edd 0%, #7b2cbf 100%)!important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(157, 78, 221, 0.4) !important;
+    border: none !important;
+}
+/*Gallery section*/
+.gallery-container{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+/*hero section*/
+.hero-card{
+background: rgba(22, 12,36,0.85);
+border: 1px solid rgba(250, 225, 156, 0.3);
+backdrop-filter: blur(10px);
+border-radius: 20px;
+padding: 30px 20px;
+text-align: center;
+margin-bottom: 40px;
+}
+.badge{
+    background: linear-gradient(135deg, #9d4edd 0%, #7b2cbf 100%);
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.hero-title{
+    font-family: 'Playfair Display', serif;
+    color: #fae19c;
+    font-size: 2.2rem;
+    margin: 10px 0;
+}
+
+.hero-subtitle{
+    color: #d1d1d1;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+/* Photo grid */
+.photo-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+/* Picture frames*/
+.photo-frame{
+    background: #ffffff;
+    padding: 12px 12px 12px 12px;
+    border-radius: 2px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    max-width: 280px;
+    margin: 0 auto;
+    transform: rotate(-1deg);
+}
+.photo-frame:hover, .photo-frame:active{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.8), 0 0 20px rgba(157, 78, 221, 0.4);
+}
+.photo-frame img{
+   width: 100%;
+   height: 170px;
+   object-fit: cover;
+   border-radius: 0;
+   filter: sepia(0.15) contrast(1.05);
+}
+
+.caption{
+    font-family:'Reenie Beanie', cursive;
+    color: #2b2b2b;
+    font-size: 1.4rem;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+body{
+background: #1b1b26 !important;
+color: #f4eae1 !important;
+}
+.hero-card{
+    background: #2a2233 !important;
+    border: 1px solid #a8728a !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5) !important;
+}
+.badge{
+    background: #a8728a !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+.photo-frame{
+    background: #fffdfa !important;
+    border: 1px solid #e0d6cb !important;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4) !important;
+}
+
+.hero-title, .section-title{
+color: #e8b4b8 !important;
+}
+/* Music page & navigation*/
+/*Navigation bar*/
+.nav-bar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    padding: 20px 0;
+}
+.nav-bar a{
+    color: #e8b4b8;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px;
+    transition: all 0.2s ease;
+}
+.nav-bar a:hover, .nav-bar a.active{
+    background: #a8728a;
+    color: #ffffff;
+}
+/* Vinyl desk container*/
+.music-desk-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #2a2233;
+    border: 2px solid #a8728a;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.vinyl-side{
+    text-align: center;
+    flex: 1 1 220px;
+}
+
+/* Animated spinning record*/
+.spinning-record{
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background: radial-gradient(circle, #222 20%, #111 21%, #111 40%, #000 41%, #333 42%, #000 100%);
+    border: 3px solid #000;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    animation: spinRecord 10s linear infinite;
+}
+
+@keyframes spinRecord {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+.mixtape-note{
+    color: #e8b4b8;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+.playlist-card{
+    flex:1 1 320px;
+    max-width: 400px;
+    background: #111115;
+    padding: 8px;
+    border-radius: 16px;
+}
+body{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+body.home-page{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 100vh !important;
+}
+
+.wishes-board{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+/* Sticky notes*/
+.note-card{
+    position: relative;
+    width: 240px;
+    min-height: 180px;
+    background: #2a2233;
+    border: 2px solid #a8728a;
+    border-radius: 12px;
+    padding: 25px 20px 15px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.note-card:hover{
+transform: scale(1.05) rotate(0deg) !important;
+z-index: 10;
+box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+.tilt-left{
+    transform: rotate(3deg)
+}
+.pin{
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+}
+.note-text{
+    color: #f4eae1;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.note-author{
+    color: #e8b4b8;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    font-style: italic;
+    text-align: right;
+    margin-top: 15px;
+}
+.caption{
+    font-family:'Reenie Beanie', cursive !important;
+    color: #2b2b2b !important;
+    font-size: 1.4rem !important;
+    margin-top: 12px !important;
+    margin-bottom: 0 !important;
+}
+.round-photo{
+    display: block;
+    margin: 15px auto;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
