@@ -7,8 +7,9 @@ A personalized, interactive web application built as an 18th birthday gift and w
 
 ---
 
-## ✨ Features
+## Features
 
+* *Index:* The question "Are we your best friends" with the option to select yes or no.
 * *Landing Card:* Custom welcome hero screen with active navigation and dynamic styling.
 * *Photo Memories Gallery:* Responsive photo grid showcasing core memories.
 * *Mixtape Page:* Seamlessly embedded Spotify music player with custom vinyl aesthetic styling.
@@ -35,4 +36,5 @@ Building this site helped me strengthen key frontend development skills:
 3. *Responsive Image Styling:* Utilized object-fit: cover and border-radius: 50% to properly crop rectangular images into perfect circular profiles without aspect ratio distortion.
 
 ---
+##NOTE: PHOTOS AND MESSAGES REMOVED FOR PRIVACY
    
