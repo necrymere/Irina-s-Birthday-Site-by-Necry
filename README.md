@@ -1,6 +1,6 @@
 # Irina-s-Birthday-Site-by-Necry
 This is my first site made specifically for a friend's 18th birthday. I made it because I am considering becoming a UI/UX designer in the future and I would like to see how it is.
-# 🎂 Irina's 18th Birthday Tribute Site
+# 🎂 Irina's 18th Birthday
 
 A personalized, interactive web application built as an 18th birthday gift and web development showcase. Features a multi-page scrapbook design, integrated Spotify player, dynamic gallery, and interactive wishes board.
 
