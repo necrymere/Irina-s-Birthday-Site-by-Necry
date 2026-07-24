@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>A really important question... Answer carefully</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="home-page"
+        <div class="quiz-card">
+            <h1 class="big-question">Are we your best friends?</h1>
+            <div class="Buttons">
+                <button class="btn yes-btn" onclick="goToBirthday()">YES!</button>
+                <button id="no-btn" class="btn no-btn" onclick="handleNoClick()">NO</button>
+            </div>
+        </div>
+         <script>
+        //Tracker for how many times the "NO" button was clicked for it to change to yes and lead to the birthday page.
+        let wasClickedOnce = false;
+        function handleNoClick(){
+            const noBtn=document.getElementById('no-btn');
+
+            if (!wasClickedOnce){
+                //For first time click change button to YES
+                noBtn.innerText = "YES!";
+                noBtn.classList.add('turned-yes');
+                wasClickedOnce=true;
+            }else{
+                //Now that it is Yes it will lead to the birthday page
+                goToBirthday();
+            }
+        }
+        function goToBirthday(){
+            alert("Thought so, to the birthday part!");
+            window.location.href="home.html";
+        }
+         </script>
+    </body>
+</html>
